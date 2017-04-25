@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	
+	<title>Landing Page</title>
+	<link rel="stylesheet" href="css/first-screen.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="menu">
+			<div class="container">
+				<a href="#mobile-menu" class="toggle-mnu"><span></span></a>
+				<ul>
+					<li><a href="#skill">Скилы</a></li>
+					<li><a href="#how">Как это будет</a></li>
+					<li><a href="#where">где мы находимся</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="content">
+		<div class="content-inner container">
+			<div class="main-wrap">
+				<h1>Создание сайтов</h1>
+				<b>Курсы по верстке и web-разработке</b>
+			</div>
+		</div>
+	</div>
+	<img src="img/main.jpg" onload="document.body.className += 'anim';" style="display: none;">
+	<a id="skill" class="show"></a>
+	<section class="skill">
+		<div class="container">
+			<h2>Мы научим Вас работе&nbsp;с:</h2>
+			<div class="skill-items">
+                <div class="skill-item animate">
+                    <div class="skill-item-icon">
+                        <img src="img/html5.svg" alt="ОСАГО-ОНЛАЙН" width="140" height="140">
+                    </div>
+                    <h3 class="skill-item-title"><span>html-разметкой</span></h3>
+                    <p class="skill-item-text">создание структуры страницы позволяющей одинаково хорошо выглядеть во всех современных браузерах и мобильных устройствах</p>
+                </div>
+                <div class="skill-item animate">
+                    <div class="skill-item-icon">
+                        <img src="img/css3.svg" alt="Техосмотр" width="140" height="140">
+                    </div>
+                    <h3 class="skill-item-title"><span>CSS стилями</span></h3>
+                    <p class="skill-item-text">научим правильно позиционировать и стилизовать элементы на странице сайта</p>
+                </div>
+                <div class="skill-item animate">
+                    <div class="skill-item-icon">
+                        <img src="img/js.svg" alt="Договор купли-продажи" width="140" height="140">
+                    </div>
+                    <h3 class="skill-item-title"><span>бызовыми навыками javascript</span></h3>
+                    <p class="skill-item-text">научим базовым знаниям которые позволят анимировать элементы страницы, такие как слайдеры, галереи, выпадающее меню и многое другое</p>
+                </div>
+            </div>
+		</div>
+	</section>
+	<a id="how" class="show"></a>
+	<section class="feature">
+		<div class="container">
+			<div class="feature-items">
+				<div class="feature-item animate">
+					<div class="feature-item-img">
+						<img src="img/settings.svg" alt="" width="256" height="256">
+					</div>
+					<p>Учебный материал будет состоять из сквозного примера из реального проекта.</p>
+				</div>
+				<div class="feature-item animate">
+					<div class="feature-item-img">
+						<img src="img/team.svg" alt="" width="256" height="256">
+					</div>
+					<p>Обучение будет проходить в небольших группах по 2-3 человека. В вечернее время и на выходных.</p>
+				</div>
+				<div class="feature-item animate">
+					<div class="feature-item-img">
+						<img src="img/teamwork.svg" alt="" width="256" height="256">
+					</div>
+					<p>Мы команда web-разработчиков, готовая делиться своим опытом с начинающими разработчиками и помогать им в дальнейшей работе.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<a id="where" class="show"></a>
+	<section class="map">
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script type="text/javascript">
+			ymaps.ready(init);
+			var zMap,
+				zPlacemark;
+
+			function init(){     
+				zMap = new ymaps.Map("map", {
+					center: [43.476338, 43.583993],
+					zoom: 16
+				});
+
+				zMap.behaviors.disable('scrollZoom'); 
+
+				zPlacemark = new ymaps.Placemark([43.476338, 43.583993], {}, {
+					iconLayout: 'default#image',
+					iconImageHref: '/img/balun.png',
+					iconImageSize: [36, 54],
+					iconImageOffset: [-20, -52]
+				});
+				zMap.geoObjects.add(zPlacemark);
+				zMap.controls.add('mapTools');
+			}
+		</script>
+		<div id="map" class="map-inner"></div>
+	</section>
+	<div class="footer">
+		<div class="container vertical-center">
+			<p>Пишите нам и мы ответим на все интересующие Вас вопросы.</p>
+		</div>
+	</div>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		$(".toggle-mnu").click(function() {
+	        $(this).toggleClass("on");
+	        $('.menu').toggleClass("on");
+	        return false;
+	    });
+		var i = 0;
+		$(window).scroll(function() {
+			i = 0;
+			// alert(i);
+			// alert($('.animate').length);
+			$('.animate').each(function(){
+				var imagePos = $(this).offset().top;
+				var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+($(window).height()*.8)) {
+					alert(i);
+					$(this).addClass('show-from-bottom delay'+i);
+					i++;
+				}
+			});
+		});
+		$(".menu").on("click","a", function (event) {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 1500);
+			return false;
+		});
+	</script>
+	<!-- BEGIN JIVOSITE CODE {literal} -->
+		<script type='text/javascript'>
+		(function(){ var widget_id = 'gS7pDBdugO';var d=document;var w=window;function l(){
+		var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+	<!-- {/literal} END JIVOSITE CODE -->
+</body>
+</html>
