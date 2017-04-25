@@ -125,16 +125,12 @@
 	        $('.menu').toggleClass("on");
 	        return false;
 	    });
-		var i = 0;
 		$(window).scroll(function() {
-			i = 0;
-			// alert(i);
-			// alert($('.animate').length);
+			var i = 0;
 			$('.animate').each(function(){
 				var imagePos = $(this).offset().top;
 				var topOfWindow = $(window).scrollTop();
 				if (imagePos < topOfWindow+($(window).height()*.8)) {
-					alert(i);
 					$(this).addClass('show-from-bottom delay'+i);
 					i++;
 				}
