@@ -43,13 +43,23 @@
 <body>
 	<header class="header">
 		<nav class="menu">
-			<div class="container">
-				<a href="#mobile-menu" class="toggle-mnu"><span></span></a>
-				<ul>
-					<li><a href="#skill">Скилы</a></li>
-					<li><a href="#how">Как это будет</a></li>
-					<li><a href="#where">где мы находимся</a></li>
-				</ul>
+			<div class="container clearfix">
+				<div class="menu-left">
+					<ul class="phones">
+						<li><a href="tel:89287079517" class="">8 (928) 707-95-17</a></li>
+						<li><a href="tel:89626529001">8 (962) 652-90-01</a></li>
+					</ul>
+				</div>
+				<div class="menu-right">
+					<a href="#mobile-menu" class="toggle-mnu"><span></span></a>
+					<nav class="menu-list">
+						<ul>
+							<li><a href="#skill">Скилы</a></li>
+							<li><a href="#how">Как это будет</a></li>
+							<li><a href="#where">где мы находимся</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</nav>
 	</header>
@@ -154,7 +164,7 @@
 	<script>
 		$(".toggle-mnu").click(function() {
 	        $(this).toggleClass("on");
-	        $('.menu').toggleClass("on");
+	        $('.menu-list').toggleClass("on");
 	        return false;
 	    });
 		$(window).scroll(function() {
@@ -168,7 +178,7 @@
 				}
 			});
 		});
-		$(".menu").on("click","a", function (event) {
+		$(".menu-list").on("click","a", function (event) {
 			event.preventDefault();
 			var id  = $(this).attr('href'),
 				top = $(id).offset().top;

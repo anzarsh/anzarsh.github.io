@@ -11,10 +11,13 @@ html, body, .wrap{
 	height: 100%;
 }
 
-
-
 *, *::before, *::after{
 	box-sizing: inherit;
+}
+
+a, a:focus, a:active, a:hover{
+	text-decoration: none;
+	outline: none;
 }
 
 body{
@@ -22,12 +25,19 @@ body{
     font-family: "Helvetica Neue", Helvetica, Verdana, Tahoma, Arial, sans-serif;
 	opacity: 0;
 }
-.wrap{
+
+.clearfix{
+	&::after{
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
+
 .anim{
 	animation: fade-in .5s ease-in;
-    animation-fill-mode: both;
-    opacity: 1;
+	animation-fill-mode: both;
+	opacity: 1;
 	.main-wrap{
 		h1{
 			animation: show-from-bottom .9s ease-out;
@@ -147,6 +157,19 @@ h2{
 	top: 0;
 	left: 0;
 	width: 100%;
+}
+
+.menu-left{
+	float: left;
+	line-height: 90px;
+}
+
+.menu-right{
+	float: right;
+	line-height: 90px;
+}
+
+.menu-list{
 	line-height: 90px;
 	font-size: 0;
 	text-align: right;
@@ -191,10 +214,27 @@ h2{
 		@include desktop(992){
 			display: block;
 			animation: show-from-bottom .7s ease-out;
-		    animation-fill-mode: both;
+	    animation-fill-mode: both;
 		}
 	}
 }
 
+
+
+.phones{
+	line-height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 30px;
+	background: url(../img/phone.svg) no-repeat left 5px;
+	background-size: 20px 20px;
+	a{
+		color: #fff;
+		transition: .5s;
+		&:hover{
+			color: #ffcb02;
+		}
+	}
+}
 
 @import "menu-toggle";
