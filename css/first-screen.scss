@@ -239,7 +239,9 @@ h2{
 
 
 address{
-	display: none;
+	position: absolute;
+	clip: rect(0,0,0,0);
+	visibility: hidden;
 }
 
 @import "menu-toggle";

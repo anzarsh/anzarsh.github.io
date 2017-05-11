@@ -54,6 +54,11 @@
 .feature{
 	background: #edf6fc;
 	padding: 40px 0;
+	h2{
+		position: absolute;
+		clip: rect(0,0,0,0);
+		visibility: hidden;
+	}
 }
 
 .feature-item{
@@ -106,7 +111,12 @@
     }
     @include desktop(480){
 	    height: calc(100% - 150px);
-		}
+	}
+	h2{
+		position: absolute;
+		clip: rect(0,0,0,0);
+		visibility: hidden;
+	}
 }
 
 .show{
