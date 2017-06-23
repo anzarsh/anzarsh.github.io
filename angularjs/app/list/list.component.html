@@ -1,0 +1,5 @@
+<ul>
+	<li *ngFor="let listitem of list">
+<list-item [codename]="listitem.name" (up)="ffup($event)" (down)="ffdown($event)">{{listitem.name}}, рейтинг {{listitem.rating}}</list-item>
+	</li>
+</ul>
