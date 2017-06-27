@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	
+	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
+	<link rel="stylesheet" href="libs/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.css">
+	<link rel="stylesheet" href="libs/jscrollpane/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="css/main.css">
+
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+
+	<header class="az-header-background">
+		<div class="container">
+			<div class="az-header clearfix">
+				<div class="az-header__logo">
+					<div class="az-logo">
+						<img src="img/az-logo.png" alt="Stihl" class="az-logo__img">
+						<b class="az-logo__text">Система качества</b>
+					</div>
+				</div>
+				<div class="az-header__menu">
+					<nav class="az-menu">
+						<a href="#" class="az-menu__icon">Меню</a>
+						<ul class="az-menu__list">
+							<li class="az-menu__item hidden-xlg">
+								<a href="#" class="az-menu__link az-menu__link_close">Закрыть</a>
+							</li>
+							<li class="az-menu__item">
+								<a href="#" class="az-menu__link">Каталог</a>
+							</li>
+							<li class="az-menu__item">
+								<a href="#" class="az-menu__link">Заказы</a>
+							</li>
+							<li class="az-menu__item">
+								<a href="#" class="az-menu__link">Акции</a>
+							</li>
+							<li class="az-menu__item">
+								<a href="#" class="az-menu__link">Финансы</a>
+							</li>
+							<li class="az-menu__item">
+								<a href="#" class="az-menu__link">Тех-сервисы</a>
+							</li>
+							<li class="az-menu__item">
+								<a href="#" class="az-menu__link">Информация</a>
+							</li>
+							<li class="az-menu__item hidden-sm hidden-md hidden-lg">
+								<a href="#" class="az-menu__link az-exit">Выйти</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="az-header__control">
+					<ul class="az-control">
+						<li class="az-control__item">
+							<a href="#" class="az-control__manager js-click">Менеджер</a>
+							<div class="az-header-popup js-show">
+								<div class="az-header-popup__head ah-topbox">
+									<span class="ah-topbox__spanleft">Мои корзины</span>
+									<a href="#" class="ah-topbox__spanright">Все корзины</a>
+									<a href="#" class="az-header-popup__close">закрыть</a>
+								</div>
+								<div class="az-header-popup__table">
+									<div class="az-table az-table_popup">
+										<div class="az-table__top">
+											<div class="az-table__head">
+												<div class="az-table__row">
+													<div class="az-table__head-td az-header-popup__col">Название</div>
+													<div class="az-table__head-td az-header-popup__col">Основная сумма</div>
+													<div class="az-table__head-td az-header-popup__col">Расчетная сумма</div>
+												</div>
+											</div>
+										</div>
+										<div class="az-table__bottom">
+											<div class="az-table__body">
+												<div class="az-table__row">
+													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">New basket 2017</a></div>
+													<div class="az-table__td az-header-popup__col">14.650</div>
+													<div class="az-table__td az-header-popup__col">-</div>
+												</div>
+												<div class="az-table__row">
+													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">Chainsaw’s basket</a></div>
+													<div class="az-table__td az-header-popup__col">6.100</div>
+													<div class="az-table__td az-header-popup__col">4.840</div>
+												</div>
+												<div class="az-table__row">
+													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">New basket 2017</a></div>
+													<div class="az-table__td az-header-popup__col">14.650</div>
+													<div class="az-table__td az-header-popup__col">3.200</div>
+												</div>
+												<div class="az-table__row">
+													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">Chainsaw’s basket</a></div>
+													<div class="az-table__td az-header-popup__col">6.100</div>
+													<div class="az-table__td az-header-popup__col">4.840</div>
+												</div>
+												<div class="az-table__row">
+													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">New basket 2017</a></div>
+													<div class="az-table__td az-header-popup__col">14.650</div>
+													<div class="az-table__td az-header-popup__col">56.800</div>
+												</div>
+												<div class="az-table__row">
+													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">Chainsaw’s basket</a></div>
+													<div class="az-table__td az-header-popup__col">6.100</div>
+													<div class="az-table__td az-header-popup__col">4.840</div>
+												</div>
+												<div class="az-table__row">
+													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">New basket 2017</a></div>
+													<div class="az-table__td az-header-popup__col">14.650</div>
+													<div class="az-table__td az-header-popup__col">3.200</div>
+												</div>
+												<div class="az-table__row">
+													<div class="az-table__td az-header-popup__col"><a href="#" class="az-orange-link">Chainsaw’s basket</a></div>
+													<div class="az-table__td az-header-popup__col">6.100</div>
+													<div class="az-table__td az-header-popup__col">4.840</div>
+												</div>
+											</div>
+										</div>
+							        </div>
+								</div>
+							</div>
+						</li>
+						<li class="az-control__item">
+							<a href="#" class="az-control__basket js-click">Корзины</a>
+							<div class="az-header-popup az-header-popup_grey js-show">
+								<a href="#" class="az-header-popup__close">закрыть</a>
+								<div class="az-header-popup__box ah-managerinfo">
+									<div class="ah-managerinfo__imgbox">
+										<img src="img/ah-manager-img.jpg" class="img-responsive" alt="manager">
+									</div>
+									<div class="ah-managerinfo__content">
+										<span class="ah-managerinfo-span">Менеджер Ирина</span>
+										<span class="ah-managerinfo-span1">Телефон:<span>8 (980) 670-90-90</span></span>
+										<span class="ah-managerinfo-span1">Email:<span>irinam@stihl.com</span></span>
+									</div>
+								</div>
+								<div class="az-header-popup__button">
+									<a href="#" class="az-button">Зайти в чат</a>
+								</div>
+							</div>
+						</li>
+						<li class="az-control__item hidden-xs">
+							<a href="#" class="az-control__exit az-exit">Выйти</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<div class="az-orders">
+					<div class="az-orders__head ah-topbox">
+						<span class="ah-topbox__spanleft">Мои заказы</span>
+						<a href="#" class="ah-topbox__spanright">Все заказы</a>
+						<p class="az-topbox__p">Введите ваш логин и пароль для того, чтобы зайти на сайт</p>
+					</div>
+					<div class="az-orders__content">
+						<div class="az-table">
+							<div class="az-table__top">
+								<div class="az-table__head">
+									<div class="az-table__row">
+										<div class="az-table__head-td az-table__td_center az-table__col1">Дата <a href="#" class="az-sort">сортировать</a></div>
+										<div class="az-table__head-td az-table__col2">Название</div>
+										<div class="az-table__head-td az-table__col3">№</div>
+										<div class="az-table__head-td az-table__col4">Кол-во</div>
+										<div class="az-table__head-td az-table__col5">Цена</div>
+										<div class="az-table__head-td az-table__col6">Скидка</div>
+										<div class="az-table__head-td az-table__col7">Итоговая цена</div>
+										<div class="az-table__head-td az-table__col5">Цена</div>
+										<div class="az-table__head-td az-table__col6">Скидка</div>
+										<div class="az-table__head-td az-table__col7">Итоговая цена</div>
+									</div>
+								</div>
+							</div>
+							<div class="az-table__bottom">
+								<div class="az-table__body">
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
+										<div class="az-table__td az-table__col3">1130 200 0356</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
+										<div class="az-table__td az-table__col3">0000 881 0107</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
+										<div class="az-table__td az-table__col3">1130 200 0356</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
+										<div class="az-table__td az-table__col3">0000 881 0107</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
+										<div class="az-table__td az-table__col3">1130 200 0356</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
+										<div class="az-table__td az-table__col3">0000 881 0107</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
+										<div class="az-table__td az-table__col3">1130 200 0356</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
+										<div class="az-table__td az-table__col3">0000 881 0107</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
+										<div class="az-table__td az-table__col3">1130 200 0356</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
+										<div class="az-table__td az-table__col3">0000 881 0107</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
+										<div class="az-table__td az-table__col3">1130 200 0356</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
+										<div class="az-table__td az-table__col3">0000 881 0107</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">STIHL Chainsaw Razor 3</div>
+										<div class="az-table__td az-table__col3">1130 200 0356</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+										<div class="az-table__td az-table__col5">4560.50</div>
+										<div class="az-table__td az-table__col6">15 %</div>
+										<div class="az-table__td az-table__col7">4280.50</div>
+									</div>
+									<div class="az-table__row">
+										<div class="az-table__td az-table__td_center az-table__col1">19.03.17</div>
+										<div class="az-table__td az-table__col2">Super Viking Chainsaw</div>
+										<div class="az-table__td az-table__col3">0000 881 0107</div>
+										<div class="az-table__td az-table__col4"><input type="text" class="az-table__input" value="1"></div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+										<div class="az-table__td az-table__col5">2170.00</div>
+										<div class="az-table__td az-table__col6">2 %</div>
+										<div class="az-table__td az-table__col7">2156.00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<div class="ah-requisites">
+					<div class="ah-discounts__topbox ah-topbox ah-requisites-topbox">
+						<span class="ah-topbox__spanleft">Мои реквизиты</span>
+						<a href="#" class="ah-topbox__spanright">Редактировать</a>
+					</div>
+					<div class="ah-requisites__content ah-reqcontent">
+						<div class="ah-reqcontent-wrapp1">
+							<div class="ah-reqcontent-wrapp">
+								<span class="ah-reqcontent-span">Название организвации:</span>
+								<span class="ah-reqcontent-span ah-reqspan">Общество с ограниченной ответственностью “Свобода”</span>
+								<span class="ah-reqcontent-span">ИНН:<span>0000000000089</span></span>
+								<span class="ah-reqcontent-span">КПП:<span>0000000000089</span></span>
+								<span class="ah-reqcontent-span">ОГРН:<span>0000000000089</span></span>
+								<span class="ah-reqcontent-span">ОКВД:<span>12520004678352923400</span></span>
+							</div>
+							<div class="ah-reqcontent-wrapp ah-reqwrapp1">
+								<span class="ah-reqcontent-span">Юридический и фактический адрес:</span>
+								<span class="ah-reqcontent-span ah-reqspan">г. Москва, ул. Краснознаменная, 125</span>
+								<span class="ah-reqcontent-span">Почтовый индекс:<span>349007</span></span>
+								<span class="ah-reqcontent-span">Банковские реквизиты:</span>
+								<span class="ah-reqcontent-span ah-reqspan">г. Москва, ул. Краснознаменная, 125</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+				<div class="ah-discounts">
+					<div class="ah-discounts__topbox ah-topbox">
+						<span class="ah-topbox__spanleft">Мои скидки</span>
+						<a href="#" class="ah-topbox__spanright">Все скидки</a>
+					</div>
+					<div class="ah-discounts__content az-scroll">
+						<ul class="ah-accord-list">
+							<li class="ah-accord-list__item ah-accord">
+								<a href="#" class="ah-accord__link">STIHL Machine Accesoires</a>
+								<div class="ah-accord__content" style="display: block;">
+									<a href="#" class="ah-accord__close"></a>
+									<span class="ah-accord__title">STIHL Machine Accesoires</span>
+									<div class="ah-accord__box1 ah-box1">
+										<span class="ah-box1__span">Период действия: <span>29.03.17 — 29.04.17</span></span>
+										<span class="ah-box1__span1">Код скидки: <span>0000000000089</span></span>
+									</div>
+									<div class="ah-accord__box2 ah-box2">
+										<span class="ah-box2__span">Значимость для конечного клиента:<span>Нет</span></span>
+										<span class="ah-box2__span1">Можно заказать B2B:<span>Да</span></span>
+									</div>
+								</div>
+							</li>
+							<li class="ah-accord-list__item ah-accord">
+								<a href="#" class="ah-accord__link">VIKING Machine Accesoires</a>
+								<div class="ah-accord__content">
+									<a href="#" class="ah-accord__close"></a>
+									<span class="ah-accord__title">VIKING Machine Accesoires</span>
+									<div class="ah-accord__box1 ah-box1">
+										<span class="ah-box1__span">Период действия: <span>29.03.17 — 29.04.17</span></span>
+										<span class="ah-box1__span1">Код скидки: <span>0000000000089</span></span>
+									</div>
+									<div class="ah-accord__box2 ah-box2">
+										<span class="ah-box2__span">Значимость для конечного клиента:<span>Нет</span></span>
+										<span class="ah-box2__span1">Можно заказать B2B:<span>Да</span></span>
+									</div>
+								</div>
+							</li>
+							<li class="ah-accord-list__item ah-accord">
+								<a href="#" class="ah-accord__link">Foresty & PPE</a>
+								<div class="ah-accord__content">
+									<a href="#" class="ah-accord__close"></a>
+									<span class="ah-accord__title">Foresty & PPE</span>
+									<div class="ah-accord__box1 ah-box1">
+										<span class="ah-box1__span">Период действия: <span>29.03.17 — 29.04.17</span></span>
+										<span class="ah-box1__span1">Код скидки: <span>0000000000089</span></span>
+									</div>
+									<div class="ah-accord__box2 ah-box2">
+										<span class="ah-box2__span">Значимость для конечного клиента:<span>Нет</span></span>
+										<span class="ah-box2__span1">Можно заказать B2B:<span>Да</span></span>
+									</div>
+								</div>
+							</li>
+							<li class="ah-accord-list__item ah-accord">
+								<a href="#" class="ah-accord__link">Fuels, Oils and Canisters</a>
+								<div class="ah-accord__content">
+									<a href="#" class="ah-accord__close"></a>
+									<span class="ah-accord__title">Fuels, Oils and Canisters</span>
+									<div class="ah-accord__box1 ah-box1">
+										<span class="ah-box1__span">Период действия: <span>29.03.17 — 29.04.17</span></span>
+										<span class="ah-box1__span1">Код скидки: <span>0000000000089</span></span>
+									</div>
+									<div class="ah-accord__box2 ah-box2">
+										<span class="ah-box2__span">Значимость для конечного клиента:<span>Нет</span></span>
+										<span class="ah-box2__span1">Можно заказать B2B:<span>Да</span></span>
+									</div>
+								</div>
+							</li>
+							<li class="ah-accord-list__item ah-accord">
+								<a href="#" class="ah-accord__link">Fuels, Oils and Canisters</a>
+								<div class="ah-accord__content">
+									<a href="#" class="ah-accord__close"></a>
+									<span class="ah-accord__title">Fuels, Oils and Canisters</span>
+									<div class="ah-accord__box1 ah-box1">
+										<span class="ah-box1__span">Период действия: <span>29.03.17 — 29.04.17</span></span>
+										<span class="ah-box1__span1">Код скидки: <span>0000000000089</span></span>
+									</div>
+									<div class="ah-accord__box2 ah-box2">
+										<span class="ah-box2__span">Значимость для конечного клиента:<span>Нет</span></span>
+										<span class="ah-box2__span1">Можно заказать B2B:<span>Да</span></span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ah-documents">
+					<div class="ah-discounts__topbox ah-topbox">
+						<span class="ah-topbox__spanleft">Мои документы</span>
+					</div>
+					<div class="ah-documents__content">
+						<div id="tabs" class="ah-tabs">
+						    <ul class="ah-tabs__topline ah-tabsheader">
+						        <li class="ah-tabsheader__item"><a href="#tab-1" class="ah-tabsheader-link">Договор</a></li>
+						        <li class="ah-tabsheader__item"><a href="#tab-2" class="ah-tabsheader-link ah-tablink2">Счета</a></li>
+						        <li class="ah-tabsheader__item"><a href="#tab-3" class="ah-tabsheader-link">Финансовые условия</a></li>
+						    </ul>
+						    <div class="ah-tabs__tabsbox ah-tabsbox">
+						        <div id="tab-1" class="ah-tabsbox__item">
+						        	<div class="az-table az-table_full-width">
+										<div class="az-table__top">
+											<div class="az-table__head">
+												<div class="az-table__row">
+													<div class="az-table__head-td az-table__td_center">Дата <a href="#" class="az-sort">сортировать</a></div>
+													<div class="az-table__head-td">Название</div>
+												</div>
+											</div>
+										</div>
+										<div class="az-table__bottom">
+											<div class="az-table__body">
+												<div class="az-table__row">
+													<div class="az-table__td az-table__td_center">19.03.17</div>
+													<div class="az-table__td"><a href="#" class="ah-tablink">Договор</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+						        </div>
+						        <div id="tab-2" class="ah-tabsbox__item">
+						            
+						            Контент второго таба
+						        </div>
+						        <div id="tab-3" class="ah-tabsbox__item">
+						            Контент третьего таба
+						        </div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+				<div class="ah-manager">
+					<div class="ah-manager__topbox ah-managertop">
+						<span class="ah-managertop-span">Чат с менеджером</span>
+					</div>
+					<div class="ah-manager__middlebox ah-managerinfo">
+						<div class="ah-managerinfo__imgbox">
+							<img src="img/ah-manager-img.jpg" class="img-responsive" alt="manager">
+						</div>
+						<div class="ah-managerinfo__content">
+							<span class="ah-managerinfo-span">Менеджер Ирина</span>
+							<span class="ah-managerinfo-span1">Телефон:<span>8 (980) 670-90-90</span></span>
+							<span class="ah-managerinfo-span1">Email:<span>irinam@stihl.com</span></span>
+						</div>
+					</div>
+					<div class="az-scroll ah-scrollheight">
+						<div class="ah-manager__bottombox ah-managerentry">
+							<div class="ah-managerentry__titlebox">
+								<span class="ah-managerentry-title">Сегодня</span>
+							</div>
+							<div class="ah-managerentry__graybox ah-managergray">
+								<div class="ah-managergray__box">
+									<span class="ah-managerentry-span">Здравствуйте!</span>
+									<span class="ah-managerentry-span">Чем могу вам помочь?</span>
+								</div>
+								<span class="ah-managergray__span">09:30</span>
+							</div>
+							<div class="ah-managerentry__whitebox ah-managerwhite">
+								<div class="ah-managerwhite__box1">
+									<span class="ah-managerwhite__span1">Денег в хату, здоровья семье и близким</span>
+								</div>
+								<span class="ah-managerwhite__span">10:15</span>
+							</div>
+							<div class="ah-managerentry__whitebox ah-managerwhite">
+								<div class="ah-managerwhite__box1">
+									<span class="ah-managerwhite__span1">Помогите пожалуйста</span>
+								</div>
+								<span class="ah-managerwhite__span">10:16</span>
+							</div>
+							<div class="ah-managerentry__graybox ah-managergray">
+								<div class="ah-managergray__box">
+									<span class="ah-managerentry-span">Всегда рада помочь :)</span>
+									<span class="ah-managerentry-span">Обращайтесь!</span>
+								</div>
+								<span class="ah-managergray__span">20:21</span>
+							</div>
+						</div>
+					</div>
+					<div class="ah-manager__textbox ah-managertext">
+						<form class="ah-managertext-form">
+							<input type="text" placeholder="Напиcать сообщение">
+							<input type="submit" value="">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section class="ah-footer">
+	    <div class="container">
+	    	<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="ah-footer__box1 ahfooter1">
+						<div class="ahfooter1-left">
+							<span class="ahfooter1-span ahfooter1span1">Email:<span>B2BTest@stihl.gb</span></span>
+						</div>
+						<div class="ahfooter1-right">
+							<span class="ahfooter1-span ahfooter1span2">Телефон:<span>8 (980) 380-90-80</span></span>
+						</div>
+					</div>
+					<div class="ah-footer__box2 ahfooter2">
+						<div class="ahfooter2-left">
+							<a href="#" class="ahfooter2-span">ANDREAS STIHL LTD</a>
+							<a href="#" class="ahfooter2-span">STIHL House</a>
+						</div>
+						<div class="ahfooter2-right">
+							<a href="#" class="ahfooter2-span">Stanhope Road</a>
+							<a href="#" class="ahfooter2-span">Camberley Surrey GU15 3YT</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

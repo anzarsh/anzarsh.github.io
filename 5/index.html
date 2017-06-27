@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+	<title>Радио</title>
+    <meta property="og:url"           content="http://zvuk.bz/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Радио" />
+    <meta property="og:description"   content="Дорожное радио, Супер-дискотека 90х, Русское радио" />
+    <meta property="og:image"         content="http://zvuk.bz/path/image.jpg" />
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link href="img/favicon.png" rel="icon" type="image/x-icon">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8&appId=637500426437914";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="wrapper">
+        <div class="slider">
+            <div id="slide3" class="slide slide3 prev"></div>
+            <div id="slide1" class="slide slide1 current"></div>
+            <div id="slide2" class="slide slide2 next"></div>
+        </div>
+        <div class="controls">
+            <a href="#slide1" class="active"></a>
+            <a href="#slide2"></a>
+            <a href="#slide3"></a>
+        </div>
+        <div class="arrows">
+            <div class="arrow-prev">
+                <div class="arrow-img"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+            </div>
+            <div class="arrow-next">
+                <div class="arrow-img"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="radious">
+        <a href="http://zvuk.bz/#" onclick="Player.track(this);return false;" data-uri="http://dorognoe.hostingradio.ru:8000/radio" data-title="Дорожное радио"><img src="img/dr.png" alt="rr"></a><a href="http://zvuk.bz/#" onclick="Player.track(this);return false;" data-uri="http://online.radiorecord.ru:8102/sd90_128" data-title="Супер-дискотека 90х"><img src="img/sd.png" alt="sd"></a><a href="http://zvuk.bz/#" onclick="Player.track(this);return false;" data-uri="http://icecast.russkoeradio.cdnvideo.ru/rr.mp3" data-title="Русское радио"><img src="img/rr.png" alt="dr"></a>
+    </div>
+    <div class="soc">
+        <script type="text/javascript" src="//vk.com/js/api/openapi.js?139"></script>
+       <script type="text/javascript">
+          VK.init({apiId: 5861271, onlyWidgets: true});
+        </script>
+
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="100px" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+        <div id="vk_like"></div>
+        
+        <script type="text/javascript">
+        VK.Widgets.Like("vk_like", {type: "mini"});
+        </script>
+    </div>
+    <div class="footer">
+        <div id="player">
+            <audio id="audio"></audio>
+            <div id="pp" class="play" onclick="Player.pp();"><img width="24" height="28" class="img-play" src="img/play.png" alt="play"><img width="19" height="27" class="img-pause" src="img/pause.png" alt="pause"></div>
+            <div id="pbar">
+                <span id="time"></span>
+                <span id="stationname"></span>
+            </div>
+            <div id="volicon" onclick="Player.mute();" class="high"><img width="30" height="21" class="img-high" src="img/volume-high.png" alt="volume-high"><img width="29" height="20" class="img-medium" src="img/volume-medium.png" alt="volume-medium"><img width="23" height="17" class="img-low" src="img/volume-low.png" alt="volume-low"><img width="34" height="21" class="img-muted" src="img/muted.png" alt="muted"></div>
+            <div id="vbar"><input type="range" min="0" max="100" onchange="Player.vol(this.value);" oninput="Player.vol(this.value);" value="Player.audio.volume*100"></div>
+        </div>
+    </div>
+	<!-- START: Scripts -->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END: Scripts -->
+
+</body>
+</html>

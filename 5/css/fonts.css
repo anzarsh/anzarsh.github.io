@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url('../fonts/PT_Sans-Web-Bold/PT_Sans-Web-Bold.eot');
+    src: local('☺'), url('../fonts/PT_Sans-Web-Bold/PT_Sans-Web-Bold.woff') format('woff'), url('../fonts/PT_Sans-Web-Bold/PT_Sans-Web-Bold.ttf') format('truetype'), url('../fonts/PT_Sans-Web-Bold/PT_Sans-Web-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
