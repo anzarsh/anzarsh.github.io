@@ -1,0 +1,6 @@
+[submodule "js/PacMan-js"]
+	path = js/PacMan-js
+	url = https://github.com/anzarsh/PacMan-js
+[submodule "js/phoneNoteBook"]
+	path = js/phoneNoteBook
+	url = https://github.com/anzarsh/phoneNoteBook.git
