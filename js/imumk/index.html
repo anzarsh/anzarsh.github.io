@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imumk</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+    
+    <script src="lib/event.js" defer></script>
+    <script src="lib/request.js" defer></script>
+    <script src="js/filter.js" defer></script>
+    <script src="js/course.js" defer></script>
+    <script src="js/courses.js" defer></script>
+    <script src="lib/app.js" defer></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function(){
+            window.app = new lib.App();
+        }, false);
+    </script>
+</head>
+<body>
+
+<div class="top">    
+    <header class="header">
+        <div class="container header__grid">
+            <figure class="header__logo">
+                <a href="/">
+                    <img src="https://www.imumk.ru/Content/skins/bubble/images/logo.svg" alt="облако знаний">
+                </a>
+            </figure>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__link">
+                        <a href="#" class="header__courses">Курсы</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#" class="header__reg">Регистрация</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#" class="header__login">Вход</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#" class="header__cart">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="main__title">Курсы</h1>
+            <section class="main__filter filter">
+                <h2 class="visibility-hidden">Поиск по товарам</h2>
+                <form action="" class="filter__form">
+                    <p class="filter__item">
+                        <select name="subj" class="filter__select">
+                            <option value="">Все предметы</option>
+                            <option >Алгебра</option>
+                            <option >Английский язык</option>
+                            <option >Биология</option>
+                            <option >География</option>
+                            <option >Геометрия</option>
+                            <option >Демо-версия</option>
+                            <option >Естествознание</option>
+                            <option >Информатика</option>
+                            <option >История</option>
+                            <option >Математика</option>
+                            <option >Обществознание</option>
+                            <option >Окружающий мир</option>
+                            <option >Русский язык</option>
+                            <option >Физика</option>
+                            <option >Химия</option>
+                        </select>
+                    </p>
+                    <p class="filter__item">
+                        <select name="genre" class="filter__select">
+                            <option value="">Все жанры</option>
+                            <option >Задачник</option>
+                            <option >Медиа-коллекция</option>
+                            <option >Рабочая тетрадь</option>
+                            <option >Тренажер ВПР 2017</option>
+                            <option >Тренажер ЕГЭ 2015</option>
+                            <option >Тренажер ЕГЭ 2016</option>
+                            <option >Тренажер ЕГЭ 2017</option>
+                        </select>
+                    </p>
+                    <p class="filter__item">
+                        <select name="grade" class="filter__select">
+                            <option value="">Все классы</option>
+                            <option >1</option>
+                            <option >2</option>
+                            <option >3</option>
+                            <option >4</option>
+                            <option >5</option>
+                            <option >6</option>
+                            <option >7</option>
+                            <option >8</option>
+                            <option >9</option>
+                            <option >10</option>
+                            <option >11</option>
+                        </select>
+                    </p>
+                    <p class="filter__item filter__item_search">
+                        <input class="filter__input" type="text" placeholder="Поиск" name="search">
+                        <button class="filter__submit" type="submit">Поиск</button>
+                    </p>
+                </form>
+            </section>
+            <section class="main__courses courses">
+                <h2 class="visibility-hidden">Список обучающих курсов</h2>
+                <p class="courses__price-change">
+                    <select name="priceOrBonus" class="courses__select">
+                        <option value="changeToPrice">Рубли</option>
+                        <option value="changeToBonus">Бонусы</option>
+                    </select>
+                </p>      
+                <div class="courses__grid"></div>
+            </section>
+        </div>
+    </main>
+</div>
+
+<div class="bottom">
+    <footer class="footer">
+        <div class="container footer__grid">
+            <p class="footer__legal">
+                © <a href="http://physiconlab.ru">ООО «Физикон Лаб»</a>, 2013—2017<br>
+                <a href="#">Пользовательское соглашение</a>
+            </p>
+            <ul class="footer__socials">
+                <li class="footer__social">
+                    <a href="#" class="footer__twitter">Twitter</a>
+                </li>
+                <li class="footer__social">
+                    <a href="#" class="footer__vkontakte">Vkontakte</a>
+                </li>
+                <li class="footer__social">
+                    <a href="#" class="footer__facebook">Facebook</a>
+                </li>
+                <li class="footer__social">
+                    <a href="#" class="footer__instagram">Instagram</a>
+                </li>
+            </ul>
+            <p class="footer__legal footer__legal_right">
+                <a href="tel:+74987446757">+7 (498) 744-67-57</a>,
+                <a href="mailto:info@imumk.ru">info@imumk.ru</a><br>
+                <a href="#">Правила пользования сайтом</a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="template">
+        <article class="courses__item">
+            <figure class="courses__figure">
+                <img class="courses__image"
+                 src="https://www.imumk.ru/covers/115.png" alt="#">
+                 <div class="courses__try"></div>
+            </figure>
+            <div class="courses__info">
+                <p class="courses__title">Демо-версия</p>
+                <p class="courses__grade">5-11 классы</p>
+                <p class="courses__genre">Медиа-коллекция</p>
+                <p class="courses__meta">
+                    <a href="#" class="courses__link" target="_blank">Перейти к обучению</a>
+                </p>
+                <p class="courses__controls">
+                    <a href="#" class="courses__button">Подробнее</a>
+                </p>
+            </div>
+        </article>
+    </div>
+</div>
+
+</body>
+</html>
