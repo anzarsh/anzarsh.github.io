@@ -5,17 +5,8 @@
 
         this.data = {};
 
-        // this.sendRequest("http://api.qa.imumk.ru/api/mobilev1/update",
-        //     {'data':''}, function(data) {
-        //         // console.log(JSON.stringify(data));
-        //         self.emit("Request__success");
-        //     }, function(error) {
-        //         console.error(error);
-        //     });
-
-        this.sendRequest("data.json",
+        this.sendRequest("http://api.qa.imumk.ru/api/mobilev1/update",
             {'data':''}, function(data) {
-                // console.log(data);
                 self.emit("Request__success");
             }, function(error) {
                 console.error(error);
