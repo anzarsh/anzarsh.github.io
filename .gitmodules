@@ -4,6 +4,6 @@
 [submodule "js/phoneNoteBook"]
 	path = js/phoneNoteBook
 	url = https://github.com/anzarsh/phoneNoteBook.git
-[submodule "vuejs/--name"]
-	path = vuejs/--name
+[submodule "vuejs/vuejs"]
+	path = vuejs/vuejs
 	url = https://github.com/anzarsh/table-vuejs
