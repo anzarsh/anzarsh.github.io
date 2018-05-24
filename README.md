@@ -2,7 +2,7 @@
 
 Щумахуа Анзар - Портфолио:
 
-В данный момент активно изучяю js и angular2, вот несколько учебных примеров:
+В данный момент активно изучаю js и angular2, вот несколько учебных примеров:
 
 1. [https://anzarsh.github.io/js/PacMan-js/](https://anzarsh.github.io/js/PacMan-js/) - JavaScript-версия игры PacMan. Вся графика реализована на canvas.
 
