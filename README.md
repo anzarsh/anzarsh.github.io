@@ -8,7 +8,7 @@
 
 Вот несколько учебных примеров на js:
 
-1. [https://anzarsh.github.io/js/pacman/](https://anzarsh.github.io/js/PacMan-js/) - JavaScript-версия игры PacMan. Вся графика реализована на canvas.
+1. [https://anzarsh.github.io/js/pacman/](https://anzarsh.github.io/js/pacman/) - JavaScript-версия игры PacMan. Вся графика реализована на canvas.
 
 2. [https://anzarsh.github.io/js/webcamera/](https://anzarsh.github.io/js/webcamera/) - Пример подключения к аудио и вебкамере.
 
