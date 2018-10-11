@@ -1,9 +1,6 @@
-[submodule "js/PacMan-js"]
-	path = js/PacMan-js
+[submodule "js/pacman"]
+	path = js/pacman
 	url = https://github.com/anzarsh/PacMan-js
-[submodule "js/phoneNoteBook"]
-	path = js/phoneNoteBook
-	url = https://github.com/anzarsh/phoneNoteBook.git
-[submodule "vuejs/vuejs"]
-	path = vuejs/vuejs
-	url = https://github.com/anzarsh/table-vuejs
+[submodule "js/webcamera"]
+	path = js/webcamera
+	url = https://github.com/anzarsh/WebCamera.git

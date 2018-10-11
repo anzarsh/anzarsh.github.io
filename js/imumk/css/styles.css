@@ -549,7 +549,7 @@ body {
   text-decoration: none;
   font-size: 0;
   background-repeat: no-repeat;
-  background-image: url(https://www.imumk.ru/Content/skins/bubble/images/icons/social_links.svg);
+  background-image: url(../img/social_links.svg);
 }
 
 .footer__twitter {

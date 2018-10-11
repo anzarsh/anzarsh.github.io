@@ -5,8 +5,10 @@
 
         this.data = {};
 
-        this.sendRequest("http://api.qa.imumk.ru/api/mobilev1/update",
-            {'data':''}, function(data) {
+        // this.sendRequest("http://api.qa.imumk.ru/api/mobilev1/update",
+        this.sendRequest("data.json",
+            {'data':''}, 
+            function(data) {
                 self.emit("Request__success");
             }, function(error) {
                 console.error(error);
@@ -25,7 +27,8 @@
         var self = this;
 
         this.xhr = new XMLHttpRequest();
-        this.xhr.open("POST", url, true);
+        // this.xhr.open("POST", url, true);
+        this.xhr.open("GET", url, true);
         this.xhr.onreadystatechange = function(e) {
             if(this.readyState != 4) return;
             if(this.status == 200){

@@ -38,7 +38,7 @@
             self.updateFilter();
         };
 
-        this.search.onkeyup = function(e) {
+        this.search.oninput = function(e) {
             self.updateFilter();
         };
     };

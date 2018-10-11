@@ -25,7 +25,8 @@
     Course.prototype.addDataToTemplate = function() {
         var template = this.template;
         var data = this.data;
-        template.elements.image.src = "https://www.imumk.ru/covers/" +
+        // template.elements.image.src = "https://www.imumk.ru/covers/" +
+        template.elements.image.src = "img/covers/" +
                                         data.courseId + ".png";
         template.elements.image.alt = data.title;
         template.elements.title.textContent = data.subject;

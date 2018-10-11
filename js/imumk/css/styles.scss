@@ -149,7 +149,7 @@ body {
 
 .header__cart {
     margin-left: 18px;
-    background: url("https://www.imumk.ru/Content/skins/bubble/images/icons/cart.svg") center no-repeat;
+    background: url("../img/cart.svg") center no-repeat;
     width: 46px;
     height: 43px;
     text-decoration: none;
@@ -238,7 +238,7 @@ body {
     width: 32px;
     height: 32px;
     line-height: normal;
-    background: #fff url("https://www.imumk.ru/Content/skins/bubble/images/icons/icon-search-25.png") center no-repeat;
+    background: #fff url("../img/icon-search-25.png") center no-repeat;
     border: 0;
     border-radius: 4px;
     font-size: 0;
@@ -491,7 +491,7 @@ body {
     text-decoration: none;
     font-size: 0;
     background-repeat: no-repeat;
-    background-image: url(https://www.imumk.ru/Content/skins/bubble/images/icons/social_links.svg);
+    background-image: url(../img/social_links.svg);
 }
 
 .footer__twitter {
