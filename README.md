@@ -1,16 +1,20 @@
 # anzarsh.github.io
 
-Щумахуа Анзар - Портфолио:
+Щумахуа Анзар ([https://github.com/anzarsh](https://github.com/anzarsh))
+
+Портфолио:
 
 В данный момент активно изучаю react и nodejs.
 
 Вот несколько учебных примеров на js:
 
-1. [https://anzarsh.github.io/js/PacMan-js/](https://anzarsh.github.io/js/PacMan-js/) - JavaScript-версия игры PacMan. Вся графика реализована на canvas.
+1. [https://anzarsh.github.io/js/pacman/](https://anzarsh.github.io/js/PacMan-js/) - JavaScript-версия игры PacMan. Вся графика реализована на canvas.
 
-2. [https://anzarsh.github.io/js/phoneNoteBook/](https://anzarsh.github.io/js/phoneNoteBook/) - записная книжка номеров телефонов и электронных адресов. На данном примере начал исследовать возможность компонентной разработки на чистом js, что вылилось в написание небольшой библиотечки [component-loader](https://github.com/anzarsh/component-loader).
+2. [https://anzarsh.github.io/js/webcamera/](https://anzarsh.github.io/js/webcamera/) - Пример подключения к аудио и вебкамере.
 
-3. [https://anzarsh.github.io/angularjs/](https://anzarsh.github.io/angularjs/) - а это достаточно тривиальный пример на angular2 - система рейтинга в которой можно расположить страны в понравившемся порядке, нажимая Like или Dislike.
+3. [https://anzarsh.github.io/js/react/](https://anzarsh.github.io/js/react/) - Небольшой учебный пример на React.
+
+3. [https://anzarsh.github.io/js/imumk/](https://anzarsh.github.io/js/imumk/) - Реализация фильтра на чистом js.
 
 Примеры прежних работ по верстке:
 
